@@ -16,7 +16,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 cranelift-codegen = "0.50.0"
-cranelift-native = "0.50.0"
+cranelift-native = "0.52.0"
 cranelift-entity = "0.50.0"
 cranelift-wasm = "0.50.0"
 cranelift-frontend = "0.50.0"
