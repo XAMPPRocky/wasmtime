@@ -379,7 +379,7 @@ dependencies = [
  "log",
  "serde",
  "smallvec",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "thiserror",
 ]
 
@@ -417,7 +417,7 @@ dependencies = [
  "cranelift-codegen",
  "log",
  "smallvec",
- "target-lexicon",
+ "target-lexicon 0.9.0",
 ]
 
 [[package]]
@@ -428,7 +428,7 @@ checksum = "21398a0bc6ba389ea86964ac4a495426dd61080f2ddd306184777a8560fe9976"
 dependencies = [
  "cranelift-codegen",
  "raw-cpuid",
- "target-lexicon",
+ "target-lexicon 0.9.0",
 ]
 
 [[package]]
@@ -652,7 +652,23 @@ dependencies = [
  "log",
  "scroll",
  "string-interner",
- "target-lexicon",
+ "target-lexicon 0.9.0",
+ "thiserror",
+]
+
+[[package]]
+name = "faerie"
+version = "0.14.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "74b9ed6159e4a6212c61d9c6a86bee01876b192a64accecf58d5b5ae3b667b52"
+dependencies = [
+ "anyhow",
+ "goblin",
+ "indexmap",
+ "log",
+ "scroll",
+ "string-interner",
+ "target-lexicon 0.10.0",
  "thiserror",
 ]
 
@@ -1657,6 +1673,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f4c118a7a38378f305a9e111fcb2f7f838c0be324bfb31a77ea04f7f6e684b4"
 
 [[package]]
+name = "target-lexicon"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ab0e7238dcc7b40a7be719a25365910f6807bd864f4cce6b2e6b873658e2b19d"
+
+[[package]]
 name = "tempfile"
 version = "3.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1687,7 +1709,7 @@ dependencies = [
  "cfg-if",
  "os_pipe",
  "pretty_env_logger",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "tempfile",
  "wasi-common",
  "wasmtime",
@@ -1956,7 +1978,7 @@ dependencies = [
  "rayon",
  "region",
  "serde",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "thiserror",
  "wasi-common",
  "wasmparser 0.45.0",
@@ -1974,14 +1996,14 @@ version = "0.7.0"
 dependencies = [
  "anyhow",
  "docopt",
- "faerie",
+ "faerie 0.14.0",
  "file-per-thread-logger",
  "libc",
  "more-asserts",
  "pretty_env_logger",
  "rayon",
  "serde",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "test-programs",
  "wasi-common",
  "wasm-webidl-bindings",
@@ -2003,10 +2025,10 @@ name = "wasmtime-debug"
 version = "0.7.0"
 dependencies = [
  "anyhow",
- "faerie",
+ "faerie 0.13.0",
  "gimli",
  "more-asserts",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "thiserror",
  "wasmparser 0.45.0",
  "wasmtime-environ",
@@ -2037,7 +2059,7 @@ dependencies = [
  "serde",
  "sha2",
  "spin",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "tempfile",
  "thiserror",
  "toml",
@@ -2102,7 +2124,7 @@ dependencies = [
  "cranelift-wasm",
  "more-asserts",
  "region",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "thiserror",
  "wasmparser 0.45.0",
  "wasmtime-debug",
@@ -2115,7 +2137,7 @@ dependencies = [
 name = "wasmtime-obj"
 version = "0.7.0"
 dependencies = [
- "faerie",
+ "faerie 0.13.0",
  "more-asserts",
  "wasmtime-environ",
 ]
@@ -2127,7 +2149,7 @@ dependencies = [
  "anyhow",
  "pyo3",
  "region",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "wasmparser 0.45.0",
  "wasmtime",
  "wasmtime-environ",
@@ -2182,7 +2204,7 @@ dependencies = [
  "cranelift-entity",
  "cranelift-wasm",
  "log",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "wasi-common",
  "wasmtime",
  "wasmtime-environ",
@@ -2203,7 +2225,7 @@ dependencies = [
  "libc",
  "log",
  "more-asserts",
- "target-lexicon",
+ "target-lexicon 0.9.0",
  "wasmtime-environ",
  "wasmtime-jit",
  "wasmtime-runtime",
